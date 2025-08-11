@@ -1,9 +1,12 @@
 # fix-pipewire-in-VM
 fix pipewire vmware workstation
 
+1º
 sudo mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
+2º
 sudo nano ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
 
+3º paste
 
 monitor.alsa.rules = [
   {
@@ -20,4 +23,5 @@ monitor.alsa.rules = [
   }
 ]
 
+4º
 systemctl --user restart wireplumber pipewire pipewire-pulse
