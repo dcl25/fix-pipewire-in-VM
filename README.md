@@ -1,14 +1,15 @@
 # fix-pipewire-in-VM
 fix pipewire vmware workstation
 
-* '''bash
+* ```bash
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
-'''
-* '''bash
-  vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
-'''
+```
 
-* '''
+* ```bash
+  vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
+```
+
+* ```
 monitor.alsa.rules = [
   {
     matches = [
@@ -23,6 +24,6 @@ monitor.alsa.rules = [
     }
   }
 ]
-'''
+```
 
-* '''systemctl --user restart wireplumber pipewire pipewire-pulse'''
+* ```systemctl --user restart wireplumber pipewire pipewire-pulse```
