@@ -1,5 +1,6 @@
 # fix-pipewire-in-VM
-fix pipewire vmware workstation
+fix pipewire vmware workstation, 
+- tested on Workstation 17.6.4: Windows 11 Host and Fedora 42 Guest
 
 * ```mkdir -p ~/.config/wireplumber/wireplumber.conf.d/```
 
