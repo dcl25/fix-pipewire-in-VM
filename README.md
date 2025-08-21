@@ -1,11 +1,8 @@
 # fix-pipewire-in-VM
-fix pipewire vmware workstation, 
-- tested on Workstation 17.6.4: Windows 11 Host and Fedora 42 Guest
+fix pipewire vmware workstation.
 
 * ```mkdir -p ~/.config/wireplumber/wireplumber.conf.d/```
-
 * ```vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf```
-
 ```
 monitor.alsa.rules = [
   {
@@ -22,5 +19,7 @@ monitor.alsa.rules = [
   }
 ]
 ```
-
 * ```systemctl --user restart wireplumber pipewire pipewire-pulse```
+
+Tested and Works on :
+* Workstation 17.6.4 on Windows 11 Host and Fedora 42 Guest
