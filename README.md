@@ -1,15 +1,13 @@
 # fix-pipewire-in-VM
 fix pipewire vmware workstation
 
-* ```bash
-mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
-```
+* ```mkdir -p ~/.config/wireplumber/wireplumber.conf.d/```
 
-* ```bash
-  vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
-```
+* ```vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf```
 
-* ```
+
+*
+  ```
 monitor.alsa.rules = [
   {
     matches = [
