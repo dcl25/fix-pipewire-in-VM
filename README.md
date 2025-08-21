@@ -5,9 +5,7 @@ fix pipewire vmware workstation
 
 * ```vim ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf```
 
-
-*
-  ```
+```
 monitor.alsa.rules = [
   {
     matches = [
