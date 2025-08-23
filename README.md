@@ -1,12 +1,21 @@
 # fix-pipewire-in-VM
-fix pipewire vmware workstation
+ install & fix pipewire vmware workstation
+
 
 1º
-sudo mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
+*need install* pipewire wireplumber pipewire-pulse
+
+
 2º
+sudo mkdir -p ~/.config/wireplumber/wireplumber.conf.d/
+
+
+3º
 sudo nano ~/.config/wireplumber/wireplumber.conf.d/50-alsa-config.conf
 
-3º paste
+
+
+4º paste
 
 monitor.alsa.rules = [
   {
@@ -23,5 +32,12 @@ monitor.alsa.rules = [
   }
 ]
 
-4º
+5º
 systemctl --user restart wireplumber pipewire pipewire-pulse
+
+
+*need install*  
+in arch: pacman -S
+in fedora: dnf install
+in debian: apt
+or your choice 
