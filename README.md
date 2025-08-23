@@ -32,6 +32,8 @@ monitor.alsa.rules = [
   }
 ]
 
+
+
 5º
 systemctl --user restart wireplumber pipewire pipewire-pulse
 
