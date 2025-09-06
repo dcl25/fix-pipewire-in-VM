@@ -41,5 +41,4 @@ systemctl --user restart wireplumber pipewire pipewire-pulse
 *need install*  
 in arch: pacman -S
 in fedora: dnf install
-in debian: apt
 or your choice 
