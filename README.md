@@ -42,3 +42,5 @@ systemctl --user restart wireplumber pipewire pipewire-pulse
 in arch: pacman -S
 in fedora: dnf install
 or your choice 
+
+debian Trixie need pulse audio
