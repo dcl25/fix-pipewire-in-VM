@@ -43,4 +43,4 @@ in arch: pacman -S
 in fedora: dnf install
 or your choice 
 
-debian Trixie need pulse audio
+*debian Trixie need user to root ALL=(ALL:ALL) ALL
